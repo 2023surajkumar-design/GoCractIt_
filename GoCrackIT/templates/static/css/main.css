@@ -1,0 +1,429 @@
+body {
+    background: #f4f8fb;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h1, .display-5, .display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.btn, .btn-lg, .btn-primary, .btn-orange, .btn-outline-primary {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+    background-color: #00AEEF;
+    border-color: #00AEEF;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #007fa3;
+    border-color: #007fa3;
+}
+.btn-outline-primary {
+    color: #00AEEF;
+    border-color: #00AEEF;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: #00AEEF;
+    color: #fff;
+}
+.btn-orange, .btn-orange:focus {
+    background-color: #F5A623;
+    color: #fff;
+    border: none;
+}
+.btn-orange:hover {
+    background-color: #d4881c;
+    color: #fff;
+}
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,174,239,0.08);
+    background: #00AEEF !important;
+}
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: #F5A623 !important;
+}
+
+footer {
+    background: #00AEEF;
+    color: #fff;
+}
+footer a {
+    color: #F5A623;
+    transition: color 0.2s;
+}
+footer a:hover, footer a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.hero-section {
+    background: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.hero-section .btn {
+    box-shadow: 0 2px 8px rgba(245,166,35,0.12);
+}
+
+/* Review Area */
+#review-area .card {
+    border-radius: 1rem;
+    border: none;
+}
+#review-area .nav-tabs .nav-link {
+    color: #00AEEF;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+#review-area .nav-tabs .nav-link.active {
+    color: #F5A623;
+    border-bottom: 2.5px solid #F5A623;
+    background: none;
+}
+#review-area .list-group-item {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+#review-area .editable-field {
+    cursor: pointer;
+    border-bottom: 1px dashed #00AEEF;
+    transition: border-color 0.2s;
+}
+#review-area .editable-field:focus, #review-area .editable-field.editing {
+    outline: none;
+    border-bottom: 2px solid #F5A623;
+    background: #fffbe6;
+}
+#review-area .needs-verification {
+    border-left: 4px solid #F5A623;
+    background: #fffbe6;
+}
+#review-area .card {
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+#review-area .card-header {
+    background: #fff;
+    font-weight: 700;
+    color: #00AEEF;
+    cursor: pointer;
+    border-bottom: 1px solid #F8F9FA;
+}
+#review-area .card-header.collapsed {
+    color: #333;
+}
+#review-area .add-btn {
+    background: #F5A623;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+#review-area .add-btn:hover {
+    background: #d4881c;
+}
+#review-area .save-btn {
+    background: #F5A623;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+
+/* --- Modern Input Bar --- */
+#input-section {
+    background: #fff;
+    border-top: 2px solid #F8F9FA;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 1050;
+    box-shadow: 0 -2px 12px rgba(0,174,239,0.05);
+}
+.input-bar {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 2rem;
+    box-shadow: 0 2px 8px rgba(0,174,239,0.08);
+    padding: 0.2rem 0.5rem;
+    min-height: 40px;
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+}
+.input-bar-icon {
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.1rem;
+}
+.input-bar-icon:hover, .input-bar-icon:focus {
+    background: #eaf6fb;
+    box-shadow: 0 2px 8px #00AEEF22;
+    transform: scale(1.08);
+}
+#text-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    min-width: 80px;
+    height: 38px;
+}
+#text-input:focus {
+    background: #fff;
+    box-shadow: 0 0 0 2px #00AEEF22;
+}
+#extract-btn {
+    background: #F5A623;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    margin-left: 0.2rem;
+    height: 38px;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(245,166,35,0.10);
+}
+#extract-btn:hover, #extract-btn:focus {
+    background: #d4881c;
+    color: #fff;
+}
+#mic-anim svg {
+    transition: filter 0.2s, transform 0.2s;
+}
+#record-audio-btn.recording #mic-anim svg {
+    animation: micPulse 1s infinite alternate;
+    filter: drop-shadow(0 0 8px #F5A62388);
+}
+@keyframes micPulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
+}
+@media (max-width: 991.98px) {
+    .input-bar { max-width: 100vw; }
+    #extract-btn { font-size: 0.95rem; padding: 0.4rem 0.7rem; }
+}
+@media (max-width: 767.98px) {
+    .input-bar { flex-direction: column; align-items: stretch; padding: 0.2rem; min-height: unset; }
+    #text-input { min-width: 0; }
+    #extract-btn { width: 100%; margin: 0.3rem 0 0 0; }
+}
+/* Hide old input section styles if present */
+.input-icon-group, .icon-btn, .input-label, .input-feedback { display: none !important; }
+
+/* Accessibility & Responsive */
+:focus {
+    outline: 2px solid #F5A623 !important;
+    outline-offset: 2px;
+}
+@media (max-width: 991.98px) {
+    #review-area .col-lg-8, #input-section .col-lg-8 {
+        max-width: 100%;
+    }
+    #input-section .card {
+        max-width: 100%;
+        padding: 0.5rem !important;
+    }
+}
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #review-area .card, #input-section .card {
+        border-radius: 0.5rem;
+    }
+    #input-section {
+        position: static;
+    }
+}
+
+.diamond-accent {
+    color: #F5A623;
+    font-size: 1.2em;
+    vertical-align: middle;
+    margin-right: 0.3em;
+}
+
+/* --- Input Section Modern UI --- */
+.input-icon-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 120px;
+    max-width: 180px;
+    flex: 1 1 0;
+}
+.icon-btn {
+    background: #f8f9fa;
+    border: 2px solid #00AEEF;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(0,174,239,0.08);
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+.icon-btn:hover, .icon-btn:focus {
+    background: #eaf6fb;
+    border-color: #F5A623;
+    box-shadow: 0 4px 16px rgba(245,166,35,0.10);
+    transform: scale(1.07);
+}
+.icon-btn:active {
+    background: #F5A62322;
+    border-color: #F5A623;
+    transform: scale(0.97);
+}
+.input-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0.25rem;
+}
+.input-feedback {
+    font-size: 0.9rem;
+    color: #F5A623;
+    min-height: 18px;
+    margin-top: 0.1rem;
+}
+#text-input {
+    width: 100%;
+    min-height: 40px;
+    font-size: 0.98rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #eaf6fb;
+    transition: border-color 0.2s;
+}
+#text-input:focus {
+    border-color: #00AEEF;
+    outline: none;
+}
+/* Mic animation when recording */
+#record-audio-btn.recording #mic-anim svg {
+    animation: micPulse 1s infinite alternate;
+    filter: drop-shadow(0 0 8px #F5A62388);
+}
+@keyframes micPulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
+}
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+    .input-icon-group { min-width: 90px; max-width: 140px; }
+    .icon-btn { width: 44px; height: 44px; }
+}
+@media (max-width: 767.98px) {
+    .d-flex.flex-wrap { flex-direction: column !important; align-items: stretch !important; }
+    .input-icon-group { min-width: 100%; max-width: 100%; margin-bottom: 1rem; }
+} 
+
+/* Review Area Centering and Card Styles */
+#review-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+#review-area .card {
+  border-radius: 18px;
+  border: none;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  margin-bottom: 0.5rem;
+}
+#review-area .card-header {
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+#review-area .card-body {
+  min-height: 80px;
+  padding: 1.25rem 1.5rem;
+}
+#personal-info-plain {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #222;
+}
+#work-experience-json, #education-json {
+  background: #f7fbfd;
+  border-radius: 8px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  color: #1a1a1a;
+  padding: 1rem;
+  min-height: 100px;
+  word-break: break-all;
+}
+@media (max-width: 991px) {
+  #review-area .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #review-area .card-body {
+    padding: 0.75rem 0.5rem;
+  }
+  #review-area .card-header {
+    font-size: 1rem;
+  }
+} 

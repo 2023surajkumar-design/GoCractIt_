@@ -1,0 +1,12 @@
+Flask
+Flask-Cors
+requests
+werkzeug
+python-dotenv
+google-generativeai
+assemblyai
+PyPDF2
+python-docx
+pandas
+Pillow
+pytesseract 
